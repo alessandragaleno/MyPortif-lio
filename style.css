@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --bgColor: #080e1c;
+    --Textwidth: #fff;
+}
+.container{
+    padding-top: 50px;
+    background: var(--bgColor);
+    height: 100vh;
+    margin: auto;
+}
+.container header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*no caso da altura deu como se fosse um padding no topo de 100px.*/
+    height: 100px;
+}
+.container header nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container header nav .logo span{
+    color: #5d24a8;
+}
+.nav-links{
+    margin-right: 390px;
+}
+.container header nav .nav-links a{
+    color: #fff;
+    margin: 0 30px;
+    transition: 0.3s;
+}
+/*cor ao passar o mouse*/
+.container header nav .nav-links a:hover{
+    box-shadow: #5d24a8;
+    color: #8318c5;
+}
+.container .portf{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    height: calc(100vh -100px);
+}
+.container .portf .div-text{
+    position: absolute;
+    margin-left: 65px;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.container .portf .div-text{
+    color: #888;
+}
+img{
+    border-radius: 3px;
+    margin-right: 74px;
+    width: 80%;
+    height: 278px;;
+    box-shadow: 10px 5px 5px rgb(70, 69, 66);
+}
+.div-img { 
+    animation-name: div-img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes div-img {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.container .portf h1{
+    /*para aumentar tamanho da letra -- textwrite*/
+    color: var(--TextWrite);
+    font-size: 35px;
+    margin: 15px 0 10px;
+}
+.container .portf .div-text span{
+    /*cor da fonte*/
+    color: #5c2094;
+    /*tamanho da fonte*/
+    font-size: 25px;
+    /*engrossar a fonte*/
+    font-weight: bold;
+}
+.container .portf .div-text p{
+    color: var(--TextWrite);
+    line-height: 1.8;
+    margin: 20px 0 40px;
+}
+.container .portf .div-text .btn{
+    color: #fff;
+    background: #4b1794;
+    padding: 15px 30px;
+    border: 1px solid #5a1cb8;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+}
+.btn-mode{
+    padding: 8px;
+    border-radius: 3px;
+    background-color: #5c2094;
+    color: #dddae1;
+}
+/*animação do botão*/
+a.btn-mode:hover {
+    box-shadow: 0 0 16px #5d24a8;
+  }
+.social-icon{
+position :absolute;
+top: 505;
+transform: translateY(-50%);
+right: -2px;
+display: flex;
+flex-direction: column;
+gap: 40px;
+width: 7%;
+padding-top: 260px;
+}
+.social-icon{
+    /*cor da fonte*/
+    color: #5d24a8;
+    /*tamanho da fonte*/
+    font-size:25px;
+    /*transição de 3 segundos*/
+    transition: 0.3s;
+    
+}
+.social-icon a:hover{
+    /*efeito de apertar ao passar o mouse*/
+    transform: scale(1.2);
+}
+
